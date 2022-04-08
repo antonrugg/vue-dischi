@@ -1,6 +1,6 @@
 <template>
     
-        <div class="card d-flex flex-column align-items-center pt-3 col-10 col-sm-6 col-md-5 col-xl-5">
+        <div class="card d-flex flex-column align-items-center pt-3">
             <img :src="card.poster" :alt="card.genre">
             <p class="title mt-3">{{card.title}}</p>
             <div class="pb-5 d-flex flex-column .justify-content-start">    
@@ -37,6 +37,7 @@ export default {
 
         .title{
             color: white;
+            text-transform: uppercase;
         }
 
         .sub-title{

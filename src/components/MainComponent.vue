@@ -1,10 +1,13 @@
 <template>
   <div class="container mt-5">
-     <div class="row">
-       <div v-if="cards.length > 0" class="col-12 col-md-6 col-xl-4">
-         <CardComponent :card="cards[0]"/>
-       </div>
-     </div>
+
+    <div v-if="cards.length > 0" class="row d-flex gy-5 gx-4 justify-content-between">
+         <CardComponent  class="col-12 col-md-6 col-xl-2 " 
+         v-for="(card, index) in cards" 
+         :key="index" 
+         :card="card"/>
+    </div>
+     
   </div>
 </template>
 
