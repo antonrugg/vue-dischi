@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <HeaderComponent :logo="'logo'"/>
-    <MainComponent/>
-    <CardComponent/>
+    <HeaderComponent/>
+    <MainComponent :url="apiUrl"/>
+    <!-- <CardComponent/> -->
   </div>
 </template>
 
@@ -11,15 +11,23 @@
 
 import HeaderComponent from './components/HeaderComponent.vue'
 import MainComponent from './components/MainComponent.vue'
-import CardComponent from './components/CardComponent.vue'
+// import CardComponent from './components/CardComponent.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderComponent,
     MainComponent,
-    CardComponent
+    // CardComponent
+  },
+
+  data(){
+    return{
+      apiUrl: 'https://flynn.boolean.careers/exercises/api/array/music'
+    }
   }
+
+
 }
 </script>
 
