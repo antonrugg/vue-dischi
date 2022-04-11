@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <HeaderComponent/>
+    <!-- <SelectComponent/> -->
     <MainComponent :url="apiUrl"/>
     <!-- <CardComponent/> -->
   </div>
@@ -11,6 +12,7 @@
 
 import HeaderComponent from './components/HeaderComponent.vue'
 import MainComponent from './components/MainComponent.vue'
+// import SelectComponent from './components/SelectComponent.vue'
 // import CardComponent from './components/CardComponent.vue'
 
 export default {
@@ -18,6 +20,7 @@ export default {
   components: {
     HeaderComponent,
     MainComponent,
+    // SelectComponent
     // CardComponent
   },
 
