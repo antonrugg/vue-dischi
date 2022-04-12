@@ -1,28 +1,26 @@
 <template>
-  <div class="container-fluid d-flex flex-start p-3">
-      <img class="img-fluid" src="@/assets/spotify-logo.png" alt="logo spotify">
+  <div>
+    <img src="@/assets/spotify-logo.png" alt="Fake Spotify" />
+
+
   </div>
 </template>
 
 <script>
 export default {
-    name: 'HeaderComponent',
-    props: { 
-        
-    }
+    name: 'HeaderComponent'
 }
 </script>
 
 <style lang="scss" scoped>
-    @import '@/style/variables';
-
-    .container-fluid{
-        background-color: $bg-color-nav-and-card;
-
-        img{
-            min-width: 5%;
-            width: 35px;
-        }
+div{
+    display: flex;
+    padding: 5px;
+    background-color: #2e3a46;
+    img {
+        width: 50px;
     }
-    
+}
+
+
 </style>
